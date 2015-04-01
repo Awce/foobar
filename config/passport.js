@@ -19,17 +19,17 @@ module.exports.passport = {
     strategy: require('passport-local').Strategy
   },
 
-  bearer: {
-    strategy: require('passport-http-bearer').Strategy
-  },
+  // bearer: {
+  //   strategy: require('passport-http-bearer').Strategy
+  // },
 
   twitter: {
     name: 'Twitter',
     protocol: 'oauth',
     strategy: require('passport-twitter').Strategy,
     options: {
-      consumerKey: 'XNpvuHU0DgtB54XdJtuBlFgzN',
-      consumerSecret: 'PslvCrnypSdELihWmR8PePPxGYTBZJlYZodUX8b2K0OIq2I3XO'
+      consumerKey: 'tpTRCPHOnKObmLT2iY23JME9S',
+      consumerSecret: '2V1g4fa36aJTwk28RDFYDCprSJFBDis0BDYlMYWzQLfjUgCNdU'
     }
   },
 
@@ -64,17 +64,17 @@ module.exports.passport = {
   //   }
   // },
 
-  cas: {
-    name: 'CAS',
-    protocol: 'cas',
-    strategy: require('passport-cas').Strategy,
-    options: {
-      ssoBaseURL: 'http://your-cas-url',
-      serverBaseURL: 'http://localhost:1337',
-      serviceURL: 'http://localhost:1337/auth/cas/callback'
-    }
-  },
-  
+  // cas: {
+  //   name: 'CAS',
+  //   protocol: 'cas',
+  //   strategy: require('passport-cas').Strategy,
+  //   options: {
+  //     ssoBaseURL: 'http://your-cas-url',
+  //     serverBaseURL: 'http://localhost:1337',
+  //     serviceURL: 'http://localhost:1337/auth/cas/callback'
+  //   }
+  // },
+
   intuit: {
     name: 'QuickBooks',
     protocol: 'oauth',

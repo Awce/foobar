@@ -24,6 +24,11 @@
       </div>
       <button type="submit" class="button alert expand radius"><span class="splik_icon-send"> </span>Inicia sesión.</button>
     </form>
+
+    <% Object.keys(providers).forEach(function (key) { %>
+      <a href="/auth/<%= providers[key].slug %>" class="button alert radius" role="button"><%= providers[key].name %></a>
+    <% }) %>
+
     <% if (providers.length) {%>
       <h4>You can also use one of these...</h4>
 
