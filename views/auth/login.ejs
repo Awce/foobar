@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="panel">
+
+    <% if (errors) {%>
+      <% errors.forEach(function (error) { %>
+        <%= __(error) %>
+      <% }) %>
+    <% } %>
+
+    <h1>Bienvenido.</h1>
+    <hr>
+    <form role="form" action="/auth/local" method="post" data-abide>
+      <div class="name-field">
+        <label><span class="splik_icon-user4"> </span>Escribe tu nombre ó tu correo registrado.<small>* requerido</small>
+          <input type="text" name="identifier" required pattern="[a-zA-Z]+"  placeholder="Ejemplo: Raúl ó hola@impuestaria.com.mx">
+        </label>
+        <small class="error">Se requiere un nombre valido, no puede estar vacío.</small>
+      </div>
+      <div class="password-field">
+        <label><span class="splik_icon-lock"> </span>Contraseña <small>* requerido</small>
+          <input type="password" name="password" id="password" required pattern="[a-zA-Z]+" placeholder="Por favor no uses 1234">
+        </label>
+        <small class="error">Su contraseña debe cumplir con los requisitos.</small>
+      </div>
+      <button type="submit" class="button alert expand radius"><span class="splik_icon-send"> </span>Inicia sesión.</button>
+    </form>
+    <% if (providers.length) {%>
+      <h4>You can also use one of these...</h4>
+
+      <% Object.keys(providers).forEach(function (key) { %>
+        <a href="/auth/<%= providers[key].slug %>" class="button alert radius" role="button"><%= providers[key].name %></a>
+      <% }) %>
+    <% } %>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="panel">
+    <h1>Regístrate.</h1>
+    <small>Hemos integrado Quickbooks a la Facturación Electrónica, podrás administrar tu cuenta de la manera más fácil, rápida y segura.</small>
+    <hr>
+    <form role="form" action="/auth/local/register" method="post" data-abide>
+      <div class="name-field">
+        <label><span class="splik_icon-user4"> </span>Escribe tu nombre.<small>* requerido</small>
+          <input type="text" required pattern="[a-zA-Z]+" placeholder="Ejemplo: Raúl">
+        </label>
+        <small class="error">Se requiere un nombre valido, no puede estar vacío.</small>
+      </div>
+      <div class="email-field">
+        <label><span class="splik_icon-mail"> </span> Email <small>* requerido</small>
+          <input type="email" required placeholder="Ejemplo: hola@impuestaria.com.mx">
+        </label>
+        <small class="error">Se requiere un correo valido.</small>
+      </div>
+      <div class="password-field">
+        <label><span class="splik_icon-lock"> </span>Contraseña <small>* requerido</small>
+          <input type="password" id="password" required pattern="[a-zA-Z]+" placeholder="Por favor no uses 1234">
+        </label>
+        <small class="error">Su contraseña debe cumplir con los requisitos.</small>
+      </div>
+      <button class="button alert expand radius"><span class="splik_icon-heart2"> </span> Regístrate</button>
+    </form>
+  </div>
+</div>
