@@ -42,6 +42,10 @@ module.exports.routes = {
 
   '/register': {
     view: 'register'
+  },
+
+  '/legal': {
+    view: 'legals'
   }
 
   /***************************************************************************
