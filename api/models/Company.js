@@ -8,7 +8,8 @@
 module.exports = {
 
   attributes: {
-
+    company_name  : { type: 'string', required: true, unique: true },
+    company_rfc   : { type: 'string', required: true, maxLength: 13},
+    owner         : { model: 'User'}
   }
 };
-

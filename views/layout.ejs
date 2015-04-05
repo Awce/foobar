@@ -49,13 +49,18 @@
           </div>
           <div class="small-12 medium-8 large-8 columns">
             <ul class="legals1">
-              <li><a href="/login"> Inicia sesión.</a></li>
-              <li><a href="/register"> Regístrate.</a></li>
+              <li><a href="#" data-reveal-id="videoModal">¿Cómo funciona?</a></li>
+              <% if( session.authenticated ) { %>
+                <li><a href="/logout"> Cerrar sesión</a></li>
+              <% } else { %>
+                <li><a href="/login"> Inicia sesión.</a></li>
+                <li><a href="/register"> Regístrate.</a></li>
+              <% } %>
             </ul>
-
           </div>
         </div>
     </nav>
+
 
     <%- body %>
 
@@ -83,7 +88,7 @@
     -->
 
     <!--TEMPLATES-->
-    
+
     <!--TEMPLATES END-->
 
 
@@ -127,9 +132,16 @@
           </label>
           <small class="error">Se requiere un correo valido.</small>
         </div>
-        <button class="button tiny alert acceso" type="submit"><span class="splik_icon-heart" type="submit"></span> Registrar</button>
+        <button class="button tiny alert acceso" type="submit"><span class="splik_icon-heart2" type="submit"></span> Registrar</button>
       </form>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="videoModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
+      <h1 id="videoModalTitle">Así funciona nuestro sistema.</h1>
+        <div class="flex-video widescreen vimeo">
+          <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
     <footer>
       <div class="clearfix">
@@ -155,6 +167,7 @@
       <div class="row">
         <div class="small-12 large-12 columns">
           <ul class="legals">
+            <li><a href="terminos">Términos y condiciones.</a></li>
             <li><a href="legal">Aviso Legal.</a></li>
           </ul>
           <h2>Copyright © Intuit Limited, 2013. All rights reserved. Terms and conditions, features, support, pricing, and service options subject to change without notice.</h2>
