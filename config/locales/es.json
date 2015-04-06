@@ -1,4 +1,15 @@
 {
   "Welcome": "Bienvenido",
-  "A brand new app.": "Una aplicación de la nueva marca."
+  "A brand new app.": "Una aplicación de la nueva marca.",
+  "Error.Passport.Password.Invalid": "¡La contraseña no es válida!",
+  "Error.Passport.Password.Wrong": "¡Whoa, esa contraseña no estaba del todo bien!",
+  "Error.Passport.Password.NotSet": "¡Oh, no, todavía no se ha establecido una contraseña!",
+  "Error.Passport.Username.NotFound": "Uhm, ¿cuál es tu nombre?",
+  "Error.Passport.User.Exists": "El nombre de usuario ya existe.",
+  "Error.Passport.Email.NotFound": "El correo electrónico no parece correcto.",
+  "Error.Passport.Email.Missing": "Debe suministrar una dirección de correo electrónico para la verificación.",
+  "Error.Passport.Email.Exists": "Este email ya existe. Así que intenta acceder.",
+  "Error.Passport.Username.Missing": "Debe suministrar un nombre de usuario",
+  "Error.Passport.Password.Missing": "¡Oh, no, todavía no se ha establecido una contraseña!",
+  "Error.Passport.Generic": "Snap. Algo salió mal con la autorización."
 }

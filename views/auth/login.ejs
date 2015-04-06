@@ -22,9 +22,9 @@
         </label>
         <small class="error">Su contraseña debe cumplir con los requisitos.</small>
       </div>
-      <button type="submit" class="button alert expand radius"><span class="splik_icon-send"> </span>Inicia sesión.</button>
+      <button type="submit" class="button alert expand radius"><span class="splik_icon-user3"> </span>Inicia sesión.</button>
     </form>
-    <label>o inicia con:</label>
+    <label>O inicia con:</label>
       <% Object.keys(providers).forEach(function (key) { %>
         <a href="/auth/<%= providers[key].slug %>" class="button tiny radius" role="button"><%= providers[key].name %></a>
       <% }) %>
