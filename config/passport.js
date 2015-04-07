@@ -80,8 +80,8 @@ module.exports.passport = {
     protocol: 'oauth',
     strategy: require('passport-intuit-oauth').Strategy,
     options: {
-      consumerKey: 'qyprdcUaFXIGz56Zi5kl2Ih2J0Ws4B',
-      consumerSecret: 'cXUTCUvbxFRKIOhD5pDneXhWmDT8NgHi2StUeFxg'
+      consumerKey: 'qyprd7IKWSyEekLuKrO3qCvmkQ81gM',
+      consumerSecret: 'BCEnCQOibsyc52oC6Qr1kuYYi2mSJ68oOKgCQza5'
       //callbackURL: "http://127.0.0.1:1337/auth/intuit/callback"
     }
   }

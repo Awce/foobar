@@ -49,13 +49,14 @@
           </div>
           <div class="small-12 medium-8 large-8 columns">
             <ul class="legals1">
-              <% if( session.authenticated ) { %>
-                <li><a href="/logout">Cerrar sesión <span class="splik_icon-cross"></span></a></li>
-              <% } else { %>
-                <li><a href="#" data-reveal-id="videoModal">¿Cómo funciona? <span class="splik_icon-bubble"></span></a></li>
-                <li><a href="/login">Inicia sesión <span class="splik_icon-user3"></span></a></li>
-                <li><a href="/register"> Regístrate <span class="splik_icon-heart4"></span></a></li>
-              <% } %>
+            <% if( session.authenticated ) { %>
+              <h2>Raul</h2>
+              <li><a href="/logout">Cerrar sesión <span class="splik_icon-cross"></span></a></li>
+            <% } else { %>
+              <li><a href="#" data-reveal-id="videoModal">¿Cómo funciona? <span class="splik_icon-bubble"></span></a></li>
+              <li><a href="/login">Inicia sesión <span class="splik_icon-user3"></span></a></li>
+              <li><a href="/register"> Regístrate <span class="splik_icon-heart4"></span></a></li>
+            <% } %>
             </ul>
           </div>
         </div>
