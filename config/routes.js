@@ -40,6 +40,10 @@ module.exports.routes = {
     view: 'legals'
   },
 
+  '/terminos': {
+    view: 'terms'
+  },
+
   'get /login': 'AuthController.login',
   'get /logout': 'AuthController.logout',
   'get /register': 'AuthController.register',
