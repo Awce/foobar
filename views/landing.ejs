@@ -1,37 +1,36 @@
 <% if( session.authenticated ) { %>
 <section>
   <div class="icon-bar five-up">
-    <a class="item">
+    <a href="/setting" class="item">
       <i class="splik_icon-gears"></i>
-      <label for="">Mis datos</label>
     </a>
-    <a class="item">
+    <a href="/item" class="item">
       <i class="splik_icon-picture"></i>
-      <label for="">Catalogo</label>
     </a>
-    <a class="item">
+    <a href="/customer" class="item">
       <i class="splik_icon-profile-male"></i>
-      <label for="">Personas</label>
     </a>
-    <a class="item">
+    <a href="/invoice" class="item">
       <i class="splik_icon-layers"></i>
-      <label for="">Facturas</label>
     </a>
-    <a class="item">
+    <a href="/report" class="item">
       <i class="splik_icon-linegraph"></i>
-      <label for="">Reportes</label>
     </a>
   </div>
-
-
-  <div class="row">
-    <div class="small-12 large-6">
-      <h1>Cuenta de usario.</h1>
+  <section>
+    <div class="row">
+      <div class="large-12">
+        <h1>Mis datos</h1>
+        <div class="large-12 medium-6 columns">
+          <h2>Texto</h2>
+        </div>
+        <div class="large-12 medium-6 columns">
+          <h2>Texto</h2>
+        </div>
+      </div>
     </div>
-    <div class="large-12 columns">
-      <p>Datos de la cuenta.</p>
-    </div>
-  </div>
+
+  </section>
 </section>
 
 <% } else { %>

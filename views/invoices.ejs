@@ -1,0 +1,37 @@
+<% if( session.authenticated ) { %>
+<section>
+  <div class="icon-bar five-up">
+    <a href="/setting" class="item">
+      <i class="splik_icon-gears"></i>
+    </a>
+    <a href="/item" class="item">
+      <i class="splik_icon-picture"></i>
+    </a>
+    <a href="/customer" class="item">
+      <i class="splik_icon-profile-male"></i>
+    </a>
+    <a href="/invoice" class="item">
+      <i class="splik_icon-layers"></i>
+    </a>
+    <a href="/report" class="item">
+      <i class="splik_icon-linegraph"></i>
+    </a>
+  </div>
+  <section>
+    <div class="row">
+      <div class="large-12">
+        <h1>Mis Facturas</h1>
+        <div class="large-12 medium-6 columns">
+          <h2>Empresa</h2>
+        </div>
+        <div class="large-12 medium-6 columns">
+          <h2>Texto</h2>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</section>
+<% } else { %>
+  <h1>OK</h1>
+<% } %>

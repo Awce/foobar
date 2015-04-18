@@ -53,7 +53,27 @@ module.exports.routes = {
 
   'get /auth/:provider': 'AuthController.provider',
   'get /auth/:provider/callback': 'AuthController.callback',
-  'get /auth/:provider/:action': 'AuthController.callback'
+  'get /auth/:provider/:action': 'AuthController.callback',
+
+  '/setting': {
+    view: 'settings'
+  },
+
+  '/item': {
+    view: 'items'
+  },
+
+  '/customer': {
+    view: 'customers'
+  },
+
+  '/invoice': {
+    view: 'invoices'
+  },
+
+  '/report': {
+    view: 'reports'
+  }
 
   /***************************************************************************
   *                                                                          *
