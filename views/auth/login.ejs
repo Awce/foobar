@@ -24,16 +24,16 @@
       </div>
       <button type="submit" class="button alert expand radius"><span class="splik_icon-user3"> </span>Inicia sesión.</button>
     </form>
-    <label>O inicia con:</label>
-      <% Object.keys(providers).forEach(function (key) { %>
-        <a href="/auth/<%= providers[key].slug %>" class="button tiny radius" role="button"><%= providers[key].name %></a>
-      <% }) %>
-
-
-
+    <div class="row">
+      <div class="large-12 text-center">
+        <h5>O ingresá usando tu cuenta de QuickBooks</h5>
+        <ul class="legals">
+          <li><ipp:login href="/auth/intuit" type="horizontal"></ipp:login></li>
+        </ul>
+      </div>
+    </div>
     <% if (providers.length) {%>
-      <h4>You can also use one of these...</h4>
-
+      <h4>O ingresá con:</h4>
       <% Object.keys(providers).forEach(function (key) { %>
         <a href="/auth/<%= providers[key].slug %>" class="button alert radius" role="button"><%= providers[key].name %></a>
       <% }) %>
