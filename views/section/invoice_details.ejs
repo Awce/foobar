@@ -1,0 +1,117 @@
+<div class="row">
+  <div class="large-4 columns text-left">
+    <h4>Factura 0512</h4>
+  </div>
+  <div class="large-4 columns text-right">
+    <a href="#" class="button tiny success radius"><span class="splik_icon-file-pdf"> </span>Timbrar CFDi</a>
+  </div>
+</div>
+<div class="row"  data-equalizer>
+  <div class="large-3 columns panel" data-equalizer-watch>
+    <label><span class="splik_icon-users2"> </span>Selecciona Cliente
+      <select>
+        <option value="id_cunsomer">Raul Noe Hernandez Rosas</option>
+      </select>
+    </label>
+    <a href="#" class="button tiny expand" data-reveal-id="secondModal"><span class="splik_icon-add"> </span>Nuevo Cliente</a>
+  </div>
+  <div class="large-6 columns panel" data-equalizer-watch>
+    <form action="">
+      <div class="large-4 columns">
+        <label><span class="splik_icon-calendar4"> </span>Fecha
+          <input type="text" placeholder="09/05/2015" />
+        </label>
+      </div>
+      <div class="large-4 columns">
+        <label><span class="splik_icon-calendar4"> </span>Pago
+          <input type="text" placeholder="09/05/2015" />
+        </label>
+      </div>
+      <div class="large-4 columns">
+        <label><span class="splik_icon-clock"> </span>Vencimiento
+          <select>
+            <option value="Recipe">Recepción</option>
+            <option value="10">10 días</option>
+            <option value="15">15 días</option>
+            <option value="30">30 días</option>
+            <option value="60">60 días</option>
+          </select>
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="large-3 columns panel" data-equalizer-watch>
+    <form action="">
+      <div class="row">
+       <div class="large-12 columns">
+         <label><span class="splik_icon-write"> </span>Información
+           <textarea placeholder="Mensaje que aparece en la factura"></textarea>
+         </label>
+       </div>
+     </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th width="200">Artículo</th>
+          <th width="100">Cant.</th>
+          <th width="100">Unidad</th>
+          <th width="250">Descripción</th>
+          <th width="100">Precio</th>
+          <th whith="100">Total</th>
+          <th whith="50">Imp</th>
+          <th whith="50"> </th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            <select>
+              <option value="id_article">Camioneta Lobo</option>
+            </select>
+          </td>
+          <td><option value="cant">1</option></td>
+          <td>
+            <select>
+              <option value="pz">Pz</option>
+              <option value="dz">Dz</option>
+              <option value="mt">Mt</option>
+              <option value="cm">Cm</option>
+            </select>
+          </td>
+          <td><input type="text" placeholder="Descripción" /></td>
+          <td><input type="text" placeholder="Precio" /></td>
+          <td><input type="text" placeholder="Total" /></td>
+          <td><input id="checkbox" type="checkbox"></td>
+          <td><a href="#"><span class="splik_icon-trash"> </span></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row" data-equalizer>
+  <div class="large-4 columns" data-equalizer>
+
+  </div>
+  <div class="large-4 columns" data-equalizer>
+
+  </div>
+  <div class="large-4 columns" data-equalizer>
+    <div class="small-3 large-3 columns">
+      <label for="right-label" class="right inline">Subtotal</label>
+      <label for="right-label" class="right inline">IVA</label>
+      <label for="right-label" class="right inline">Total</label>
+    </div>
+    <div class="small-9 large-9 columns">
+      <input type="text" id="right-label" placeholder="Subtotal">
+      <input type="text" id="right-label" placeholder="IVA">
+      <input type="text" id="right-label" placeholder="Total">
+    </div>
+  </div>
+</div>

@@ -80,9 +80,15 @@ module.exports.passport = {
     protocol: 'oauth',
     strategy: require('passport-intuit-oauth').Strategy,
     options: {
+      //Production
+      //consumerKey: 'qyprdcUaFXIGz56Zi5kl2Ih2J0Ws4B'
+      //consumerSecret: 'cXUTCUvbxFRKIOhD5pDneXhWmDT8NgHi2StUeFxg'
+      //callbackURL: "http://impuestaria.mx/"
+      //Development
       consumerKey: 'qyprd7IKWSyEekLuKrO3qCvmkQ81gM',
       consumerSecret: 'BCEnCQOibsyc52oC6Qr1kuYYi2mSJ68oOKgCQza5'
       //callbackURL: "http://127.0.0.1:1337/auth/intuit/callback"
+      //http://localhost:3722/auth/intuit/callback?oauth_token=qyprdJGHxWilfivSQC1RpoA8StJAnI1FMgrLE1v9LLlsbsFA&oauth_verifier=0ie64rh&realmId=1315196660&dataSource=QBO
     }
   }
 };

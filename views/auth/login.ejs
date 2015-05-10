@@ -24,14 +24,7 @@
       </div>
       <button type="submit" class="button alert expand radius"><span class="splik_icon-user3"> </span>Inicia sesión.</button>
     </form>
-    <div class="row">
-      <div class="large-12 text-center">
-        <h5>O ingresá usando tu cuenta de QuickBooks</h5>
-        <ul class="legals">
-          <li><ipp:login href="/auth/intuit" type="horizontal"></ipp:login></li>
-        </ul>
-      </div>
-    </div>
+
     <% if (providers.length) {%>
       <h4>O ingresá con:</h4>
       <% Object.keys(providers).forEach(function (key) { %>

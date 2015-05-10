@@ -115,30 +115,33 @@ s    <!--
     <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
       <h1 id="firstModalTitle">Muy pronto estará disponible, Regístrate.</h1>
       <p class="subheader"><small>Hemos integrado Quickbooks a la Facturación Electrónica, podrás administrar tu cuenta de la manera más fácil, rápida y segura.</small></p>
-
-      <form data-abide>
-        <div class="name-field">
-          <label>Escribe tu nombre <small>* requerido</small>
-            <input type="text" required pattern="[a-zA-Z]+" placeholder="Ejemplo: Raúl">
-          </label>
-          <small class="error">Se requiere un nombre valido, no puede estar vacío.</small>
-        </div>
-        <div class="email-field">
-          <label>Email <small>* requerido</small>
-            <input type="email" required placeholder="Ejemplo: hola@impuestaria.com.mx">
-          </label>
-          <small class="error">Se requiere un correo valido.</small>
-        </div>
-        <button class="button tiny alert acceso" type="submit"><span class="splik_icon-heart2" type="submit"></span> Registrar</button>
-      </form>
+        <%- partial ('section/customer_details.ejs') %>
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
     <div id="videoModal" class="reveal-modal large" data-reveal aria-labelledby="videoModalTitle" aria-hidden="true" role="dialog">
       <h1 id="videoModalTitle">Así funciona nuestro sistema.</h1>
-        <div class="flex-video widescreen vimeo">
-          <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/wnXCopXXblE?rel=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        <%- partial ('section/customer_details.ejs') %>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="secondModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h1 id="modalTitle">Nuevo Cliente.</h1>
+        <%- partial ('section/customer_details.ejs') %>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="thirtModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h1 id="modalTitle">Edita tu cuenta.</h1>
+        <%- partial ('section/company_details.ejs') %>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="fourModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h1 id="modalTitle">Nuevo Producto.</h1>
+        <%- partial ('section/catalog_details.ejs') %>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+    <div id="fiveModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h1 id="modalTitle">Nueva Factura.</h1>
+        <%- partial ('section/invoice_details.ejs') %>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
     <footer>
       <div class="clearfix">
